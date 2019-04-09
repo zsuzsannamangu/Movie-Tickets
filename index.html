@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Theater</title>
+  </head>
+  <body>
+    <div class=container>
+      <form>
+        <div class="movieTitle">
+          <label for="movie">Which movie would you like to see?</label>
+          <select id="movieTitle">
+            <option value="GloriaBell">Gloria Bell</option>
+            <option value="HotelMumbai">Hotel Mumbai</option>
+            <option value="Us">Us</option>
+          </select>
+        </div>
+        <div class="timeOfDay">
+          <label for="timeOfDay">What part of the day?</label>
+          <select id="timeOfDay">
+            <option value="Morning">Before 4PM</option>
+            <option value="Evening">After 4PM</option>
+          </select>
+        </div>
+        <div class="discount">
+          <label for="discount">Are you 65 or older?</label>
+          <select id="discount">
+            <option value="noDiscount">None</option>
+            <option value="65+">Senior</option>
+          </select>
+        </div>
+        <button id="button" type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
