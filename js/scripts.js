@@ -36,7 +36,7 @@ Ticket.prototype.priceCalculation = function()  {
   return price
 }
 
-// var ticket1 = new Ticket("Gloria Bell", "Before 4PM", "Student") //$9
+var ticket1 = new Ticket("Gloria Bell", "Before 4PM", "Student") //$9
 // var ticket2 = new Ticket("Gloria Bell", "Before 4PM", "Senior") //$8
 // var ticket3 = new Ticket("Gloria Bell", "After 4PM", "None") //$12
 // var ticket4 = new Ticket("Hotel Mumbai", "Before 4PM", "None") //$9
@@ -54,8 +54,6 @@ Ticket.prototype.priceCalculation = function()  {
 // console.log(ticket7.priceCalculation())
 
 
-
-
 $(document).ready(function()  {
   $(".btn").click(function() {
     var ticket = new Ticket(
@@ -63,6 +61,11 @@ $(document).ready(function()  {
       $("#timeOfDay").val(),
       $("#discount").val()
     )
+    var price = ticket.priceCalculation();
+
+
+    $(".price").text(price);
+    $(".answer").show();
     console.log(ticket.movieTitle)
     console.log(ticket.priceCalculation())
   });
